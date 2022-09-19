@@ -1,0 +1,129 @@
+.dropdown_menu_title {
+  font-size: 15px;
+  font-weight: 600;
+  background: none;
+  text-transform: capitalize;
+  border-bottom: 1px solid;
+  color: #4759bb;
+}
+.dropdown-list-items {
+  display: flex;
+}
+.btn_close {
+  font-size: 16px;
+  border: 3px solid;
+  color: white !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  background: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  margin-bottom: 21px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+.dropdown_menu_nav {
+  margin-left: -11rem;
+  margin-top: 0rem;
+  border: none;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  border-radius: 10px;
+}
+.btn-group:hover > .dropdown-menu {
+  display: block;
+}
+
+body.offcanvas-active {
+  overflow: hidden;
+}
+
+.offcanvas-header {
+  display: none;
+}
+
+.screen-overlay {
+  width: 0%;
+  height: 100%;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(34, 34, 34, 0.6);
+  transition: opacity 0.2s linear, visibility 0.1s, width 1s ease-in;
+}
+.screen-overlay.show {
+  transition: opacity 0.5s ease, width 0s;
+  opacity: 1;
+  width: 100%;
+  visibility: visible;
+}
+
+@media all and (max-width: 992px) {
+  .offcanvas-header {
+    display: block;
+  }
+  .nav-link {
+    color: white !important;
+  }
+  .my_bg {
+    background-color: #0084f0;
+  }
+  .mobile-offcanvas {
+    visibility: hidden;
+    transform: translateX(-100%);
+    border-radius: 0;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1200;
+    width: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: visibility 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  .mobile-offcanvas.show {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+@media (max-width: 576px) {
+  .dropdown_menu_title {
+    font-size: 13px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-bottom: 0;
+  }
+  .dropdown_menu_nav_link {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 768px) {
+  .dropdown_menu_title {
+    font-size: 13px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-bottom: 0;
+  }
+  .dropdown_menu_nav_link {
+    font-size: 11px;
+  }
+}
+@media (min-width: 1024px) {
+  .dropdown_menu_title {
+    font-size: 15px;
+    border-bottom: 1px solid;
+    border-top: none;
+  }
+  .dropdown_menu_nav_link {
+    font-size: 13px;
+  }
+}

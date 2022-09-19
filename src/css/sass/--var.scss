@@ -1,0 +1,17 @@
+$white: #ffffff;
+$white_l: #f7fafe;
+$main_color: #4759bb;
+$main_color_2: rgba(244, 67, 54, 1);
+$main_color_3: #fd981e;
+$orange_gradient: linear-gradient(
+  90deg,
+  rgba(244, 67, 54, 1) 20%,
+  rgba(255, 193, 7, 1) 66%
+);
+$main_color_gradient: linear-gradient(
+  90deg,
+  rgba(63, 81, 181, 1) 20%,
+  rgba(3, 169, 244, 1) 66%
+);
+$sm_box: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+$lg_box: 0 1rem 3rem rgba(0, 0, 0, 0.175);
